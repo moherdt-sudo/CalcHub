@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator - CalcHub</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>CalcHub</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="#">Calculators</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="calculator-card">
+            <div class="calculator-header">
+                <h2>Body Mass Index Calculator</h2>
+                <p>Calculate your BMI to understand your weight category.</p>
+            </div>
+
+            <form id="form">
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="text" id="age" placeholder="Enter your age" autocomplete="off" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Gender</label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="radio" id="m">
+                            <span>Male</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="radio" id="f">
+                            <span>Female</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="height">Height (cm)</label>
+                    <input type="text" id="height" placeholder="e.g. 175" autocomplete="off" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="weight">Weight (kg)</label>
+                    <input type="text" id="weight" placeholder="e.g. 70" autocomplete="off" required>
+                </div>
+
+                <div class="button-group">
+                    <button type="button" id="clear">Clear</button>
+                    <button type="button" id="submit">Calculate BMI</button>
+                </div>
+            </form>
+
+            <div id="result-placeholder"></div>
+        </div>
+
+        <section class="recommended-tools">
+            <h4>Recommended Tools</h4>
+            <div class="tools-grid">
+                <div class="tool-item">Calorie Calculator</div>
+                <div class="tool-item">Water Intake</div>
+                <div class="tool-item">Ideal Weight</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CalcHub. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/bmi.js"></script>
+</body>
+</html>
